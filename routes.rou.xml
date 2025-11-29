@@ -1,0 +1,50 @@
+<routes>
+    <!-- Vehicle type -->
+    <vType id="car" accel="2.0" decel="4.5" sigma="0.5"
+           length="5" maxSpeed="13.9"/>
+
+    <!-- ==== HORIZONTAL FLOWS: WEST -> EAST ==== -->
+    <!-- bottom row -->
+    <flow id="W_E_bottom" type="car" begin="0" end="900"
+          vehsPerHour="500" from="A0B0" to="B0C0"/>
+    <!-- middle row -->
+    <flow id="W_E_mid" type="car" begin="0" end="900"
+          vehsPerHour="500" from="A1B1" to="B1C1"/>
+    <!-- top row -->
+    <flow id="W_E_top" type="car" begin="0" end="900"
+          vehsPerHour="500" from="A2B2" to="B2C2"/>
+
+    <!-- ==== HORIZONTAL FLOWS: EAST -> WEST ==== -->
+    <!-- bottom row -->
+    <flow id="E_W_bottom" type="car" begin="0" end="900"
+          vehsPerHour="500" from="C0B0" to="B0A0"/>
+    <!-- middle row -->
+    <flow id="E_W_mid" type="car" begin="0" end="900"
+          vehsPerHour="500" from="C1B1" to="B1A1"/>
+    <!-- top row -->
+    <flow id="E_W_top" type="car" begin="0" end="900"
+          vehsPerHour="500" from="C2B2" to="B2A2"/>
+
+    <!-- ==== VERTICAL FLOWS: SOUTH -> NORTH ==== -->
+    <!-- left column -->
+    <flow id="S_N_left" type="car" begin="0" end="900"
+          vehsPerHour="500" from="A0A1" to="A1A2"/>
+    <!-- middle column -->
+    <flow id="S_N_mid" type="car" begin="0" end="900"
+          vehsPerHour="500" from="B0B1" to="B1B2"/>
+    <!-- right column -->
+    <flow id="S_N_right" type="car" begin="0" end="900"
+          vehsPerHour="500" from="C0C1" to="C1C2"/>
+
+    <!-- ==== VERTICAL FLOWS: NORTH -> SOUTH ==== -->
+    <!-- left column -->
+    <flow id="N_S_left" type="car" begin="0" end="900"
+          vehsPerHour="500" from="A2A1" to="A1A0"/>
+    <!-- middle column -->
+    <flow id="N_S_mid" type="car" begin="0" end="900"
+          vehsPerHour="500" from="B2B1" to="B1B0"/>
+    <!-- right column -->
+    <flow id="N_S_right" type="car" begin="0" end="900"
+          vehsPerHour="500" from="C2C1" to="C1C0"/>
+
+</routes>
